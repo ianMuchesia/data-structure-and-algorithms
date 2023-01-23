@@ -5,4 +5,4 @@ const factorialFunc = (n)=>{
     }
     return product;
 }
-console.log(factorialFunc(4))
+console.log(factorialFunc(0))
