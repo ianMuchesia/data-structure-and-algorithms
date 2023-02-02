@@ -17,3 +17,16 @@ const greatestCommonDivisor =(num_1, num_2)=>{
 }
 
 console.log(greatestCommonDivisor(21,44))
+
+
+//recursion method
+const recursiveGcd =(num_1, num_2)=>{
+    let smallestNum = num_1
+    if(num_1>num_2){
+       smallestNum = num_2;
+    }
+    let divisor =1
+    if(divisor<smallestNum){
+        
+    }
+}
