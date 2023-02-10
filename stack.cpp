@@ -52,7 +52,7 @@ public:
            int topValue = arr[top];
            arr[top] = 0;
            top--;
-           return popValue;
+           return topValue;
         }
     }
     //count number of elements in the array
@@ -84,8 +84,8 @@ public:
     //displaying the value in a descending order
     void display()
     {
-        cout<<"this is the stack: "<<endl:
-            for(let i=top+1;i>=0;i--){
+        cout<<"this is the stack: "<<endl;
+            for(int i=top+1;i>=0;i--){
                 cout<<arr[i]<<endl;
             }
     }
