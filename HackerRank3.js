@@ -11,7 +11,7 @@ array.push((zeros/arr.length).toFixed(6))
 
 //stair case 
 
-
+/* 
 const n =6
 const hash = '#'
 for(let i=1;i<n+1;i++){
@@ -27,7 +27,21 @@ for(let i=1;i<=n2;i++){
   
     console.log(space.repeat(n2-i) + hash2.repeat(i))
 }
+ */
 
+
+function stairCase2(n) {
+    const hash = '#';
+    for (let i = 1; i <= n; i++) {
+        let string = '';
+        for (let j = 0; j < i; j++) {
+            string = string + hash;
+        }
+        console.log(string);
+    }
+}
+
+stairCase2(5)
 
 
 
