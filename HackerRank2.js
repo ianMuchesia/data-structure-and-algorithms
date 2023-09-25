@@ -19,10 +19,10 @@ function diagonalDifference(arr) {
   }
  
   if(diag1>diag2){
-    console.log(diag1-diag2)
+    
     return diag1-diag2;
   }
-  console.log(diag2-diag1)
+ 
   return diag2-diag1
 }
 
