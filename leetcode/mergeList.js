@@ -29,6 +29,9 @@ class LinkedList{
         }
         this.size++
     }
+    print(){
+        
+    }
 }
 
 function createLinkedList(arr){
