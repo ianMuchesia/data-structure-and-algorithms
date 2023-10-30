@@ -74,7 +74,31 @@
         }
 
     }
+    search(value){
 
+        if(this.isEmpty())
+        {
+            console.log("the list is empty")
+            return -1;
+        }else{
+            let current = this.head;
+            let counter  = 0;
+
+            while(current)
+            {
+                if(current.value === value)
+                {
+                    return counter ;
+                }
+                counter ++
+                current = current.next;
+            }
+            return -1;
+
+            
+        }
+
+    }
     removeFrom(index){
         if(index<0 || index>=this.size){
             console.log("invalid index")
@@ -97,6 +121,28 @@
         }
         this.size--;
         return removedNode.value
+    }
+    reverse(){
+        if(this.isEmpty()){
+            
+            return;
+        }else{
+            let previous = null;
+            let current = this.head;
+            
+
+            while(current)
+            {
+                let next = current.next;
+                current.next = previous;
+                previous = current;
+                current = next
+              
+            }
+   
+            this.head = previous;
+            
+        }
     }
 
     print(){
@@ -130,6 +176,8 @@
  list.insert(50,2)
  list.insert(100,0)
  list.removeFrom(3)
+ list.reverse()
+ console.log(list.search(110));
  list.print()
 
 
