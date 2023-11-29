@@ -93,6 +93,22 @@ class BinarySearchTree{
             console.log(root.value)
         }
     }
+    levelOrder(){
+        const queue:Array<TreeNode|null> = [];
+        queue.push(this.root)
+
+        while(queue.length)
+        {
+            const current = queue.shift();
+            console.log(current?.value)
+            if(current?.left){
+               queue.push(current.left)
+            }
+            if(current?.right){
+                queue.push(current.right)
+            }
+        }
+    }
 }
 
 
